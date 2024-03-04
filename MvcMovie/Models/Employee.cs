@@ -1,9 +1,7 @@
-using MvcMovie.Models;
-namespace MvcMovie.Models
+namespace MvcMovie.Models;
+public class Employee
 {
-    public class Employee : Person
-    {
-        public string EmployeeID { get; set; }
-        public int Age { get; set; }
-    }
+    public string EmployeeID { get; set; }
+    public string TenNV { get; set; }
+
 }

@@ -8,7 +8,7 @@ public class EmployeeController : Controller
     }
     [HttpPost]
     public IActionResult Index(Employee emp){
-        string Result= "hello" + "-" + emp.EmployeeID + "-" + emp.TenNV + "-" + emp.Age;
+        string Result= "hello" + "-" + emp.EmployeeID + "-" + emp.Age;
         ViewBag.thongbao = Result;
         return View();
     }

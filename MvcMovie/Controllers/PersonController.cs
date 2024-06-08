@@ -112,6 +112,25 @@ namespace MvcMovie.Controllers
         return RedirectToAction(nameof(Index));
 
     }
+
+
+    // public IActionResult Create()
+    // {
+    //     return View();
+    // }
+    // [HttpPost]
+    // [ValidateAntiForgeryToken]
+    // public async Task<IActionResult> Create([Bind("PersonID,FullName,Address")] Person person)
+    // {
+    //     if (ModelState.IsValid)
+    //     {
+    //         _context.Add(person);
+    //         await _context.SaveChangesAsync();
+    //         return RedirectToAction(nameof(Index));
+    //     }
+    //     return View(person);
+    // }
+
     public async Task<IActionResult> Upload()
     {
         return View();
@@ -120,17 +139,18 @@ namespace MvcMovie.Controllers
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Upload(IFormFile file)
     {
-        if (file! == null)
+        if (file != null)
         {
             string fileExtension = Path.GetExtension(file.FileName);
-            if (fileExtension != ".xls" && fileExtension != ".xls")
+            if (fileExtension != ".xls" && fileExtension != ".xlsx")
             {
                 ModelState.AddModelError("", "Please choose excel file to upload");
             }
             else
             {
+                
                 var fileName = DateTime.Now.ToShortTimeString() + fileExtension;
-                var filePath = Path.Combine(Directory.GetCurrentDirectory() + "Uploads/Excels", fileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", fileName);
                 var fileLocation = new FileInfo(filePath).ToString();
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
@@ -146,10 +166,12 @@ namespace MvcMovie.Controllers
                     }
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
+                    
                 }
             }
         }
-        return View();
+                        return RedirectToAction(nameof(Index));
+        // return View(ps2);
     }
     public ActionResult Download()
     {

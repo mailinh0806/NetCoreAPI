@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AWHm22W82Eqbl5y3Z8ylGfH00eid8h0sHuuL5CTbdjlLzz4N0rTGpl2LoCxtofl7IhW2tXaeM1VB3HGzKBZ0hQ==",
+  "dgSpecHash": "a/C6eV5HXmKl3GW36/YTN4skxhzZNwXLEyYfbCWShsKIU7YtGQJ8lw3mVJAlrEswnaWOWVRi6ol6cpMnP0yXJw==",
   "success": true,
   "projectFilePath": "D:\\Net_Core_API\\MvcMovie\\MvcMovie.csproj",
   "expectedPackageFiles": [
@@ -202,7 +202,9 @@
     "C:\\Users\\admin\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\x.pagedlist\\9.1.2\\x.pagedlist.9.1.2.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\x.pagedlist.mvc.core\\9.1.2\\x.pagedlist.mvc.core.9.1.2.nupkg.sha512"
   ],
   "logs": []
 }
